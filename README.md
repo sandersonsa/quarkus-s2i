@@ -58,3 +58,7 @@ If you want to learn more about building native executables, please consult http
 Easily start your RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
+
+oc new-app ubi8/openjdk-11 https://github.com/sandersonsa/quarkus-s2i.git --name=quarkus-s2i
+oc new-app registry.access.redhat.com/ubi8/openjdk-11 https://github.com/sandersonsa/quarkus-s2i.git --name=quarkus-s2i
+oc logs -f buildconfig/quarkus-s2i
